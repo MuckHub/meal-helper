@@ -1,0 +1,26 @@
+
+<div class="container mx-auto">
+  {{#each topList}}
+
+  <div class="card mb-3 mt-4 mx-auto" style="max-width: 540px;">
+  <div class="row no-gutters">
+   
+    <div class="col-md-4">
+      <a class="mx-auto" href="/meals/detailed/{{this.idMeal}}">
+      <img src="{{this.strMealThumb}}" class="card-img" alt="...">
+      </a>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <a class="mx-auto" href="/meals/detailed/{{this.idMeal}}">
+        <h5 class="card-title text-dark">{{this.strMeal}}</h5>
+        </a>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  {{/each}}
+
+</div>

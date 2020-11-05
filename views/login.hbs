@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-center">
+  <form method="post" action="/users/signIn">
+    <p class="mt-4">Sign In</p>
+    {{#if error}}
+    <p class="mt-2 text-danger">{{error}}</p>
+    {{/if}}
+
+    <div class="form-group">
+    <input type="email" name="email" class="form-control" placeholder="Email" id="email-form">
+    </div>
+      <div class="form-group">
+      <input type="password" name="password" class="form-control" placeholder="Password" id="pass-form">
+   </div>
+  
+    <button type="submit" class="btn btn-dark">Login</button>
+  </form>
+</div>

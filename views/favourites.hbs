@@ -1,0 +1,41 @@
+{{#if favMeals}}
+
+<div class="jumbotron">
+
+  <div class="row"> 
+
+  {{#each favMeals}}
+  <div class="col-lg-4 mx-auto">
+    
+    <div class="card mt-4 mx-auto " style="width: 18rem;">
+    <a class="mx-auto" href="/meals/detailed/{{this.idMeal}}">
+    <img src="{{this.strMealThumb}}" class="card-img-top main-img" alt="img">
+    
+    <div class="card-body mx-auto d-flex  justify-content-between">
+    
+    <h5 class="card-title text-dark">{{this.strMeal}}</h5>
+    
+    </a>
+   
+    </div>
+    </div>
+     
+  </div>
+  {{/each}}
+
+</div>
+
+</div>
+{{else}}
+<div class="container mx-auto">
+  <div class="card-body mt-4 mx-auto" >
+    <blockquote class="blockquote mb-0 mx-auto">
+      <p>Your list is empty.</p>
+      
+    </blockquote>
+  </div>
+</div>
+
+
+{{/if}}
+

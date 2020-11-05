@@ -1,0 +1,30 @@
+<div class="container d-flex justify-content-center mx-auto">
+<main role="main" class="inner cover mt-5 mx-auto">
+    <h1 class="cover-heading mx-auto">Welcome to MealHelper</h1>
+    <p class="lead">Find the meal you can cook by main ingredient you have now: </p>
+    <p class="lead mx-auto">
+      <p class="text-danger error-msg hidden">Please specify an ingredient.</p>
+      <form class="form-inline result-form">
+        <div class="form-group mx-sm-3 mb-2">
+          
+          <input name="search" type="text" class="form-control" id="ingredient-text" >
+        </div>
+
+        <button type="submit" class="btn btn-dark mb-2 find-btn">Find</button>
+      </form>
+      <p class="lead mt-2">...or try your luck and get random meal: </p>
+      <form class="form-inline result-form">
+        <div class="form-group mx-sm-3 mb-2">
+          
+        <button type="submit" class="btn btn-dark mb-2 random-btn">Random</button>
+      </form>
+    </p>
+
+    
+</main>
+  
+</div>
+
+<div class="result mt-4 container d-flex justify-content-center">
+  <div class="no-result hidden">No meals found, please try again.</div>    
+</div>
